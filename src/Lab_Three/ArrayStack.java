@@ -68,8 +68,10 @@ public class ArrayStack<E> implements Stack<E>
     {
         if (isEmpty())
             return null;
-        E answer = data[index--];     // sets the data index and decrements the index
+        E answer = data[index];     // sets the data index and decrements the index
         data[index] = null;           // dereference to help with garbage collection
+        index--;
+
         return answer;
     } // end of pop()
 
@@ -81,6 +83,9 @@ public class ArrayStack<E> implements Stack<E>
     @Override
     public String toString()
     {
+        if (isEmpty())
+            return "[]";
+
         StringBuilder sb = new StringBuilder();         // initializing a string builder to hold the string values
 
         sb.append("[");
@@ -90,7 +95,7 @@ public class ArrayStack<E> implements Stack<E>
                 sb.append(data[i]).append(",");
             else
                 sb.append(data[i]);
-        } // end of for-each
+        } // end of for-eachx=
         sb.append("]");
 
         return sb.toString();
