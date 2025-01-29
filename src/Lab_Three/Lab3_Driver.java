@@ -1,3 +1,10 @@
+/*****************************************************************************************
+ * ACS-2947 | Lab Three
+ * @author Ekamjot Singh
+ * Student ID: 3167888
+ * GitHub Link : https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Three
+ ****************************************************************************************/
+
 package Lab_Three;
 
 // import statements
@@ -22,27 +29,28 @@ public class PalindromeChecker
         // now we need to strip the entered sentence of any special characters,
         // or whitespaces and push them into the stack
         char[] userChar = userInput.toCharArray();
-        char[] clean  = new char[userChar.length];
+        StringBuilder sb = new StringBuilder();
         int count = 0;
 
         for (int i = 0; i < userChar.length; i++)
         {
             if(Character.isLetter(userChar[i]))
             {
-                clean[i] = userChar[i];
+                sb.append(userChar[i]);
                 count++;
                 //System.out.print(userChar[i]);
             } // end of if conditional
 
         } // end of for loop
 
+        String cleanString = sb.toString();
+        char[] clean = cleanString.toLowerCase().toCharArray();
+
         for (int i = 0; i < count; i++)
         {
             stack.push(clean[i]);
         } // end of for
-
-        System.out.println(Arrays.toString(clean));
-        System.out.println(stack);
+        ;
 
         // now the values have been pushed, so that the element pushed in the end,
         // is the element that rests on the top
