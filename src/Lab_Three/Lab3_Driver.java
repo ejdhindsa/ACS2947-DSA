@@ -10,10 +10,19 @@ package Lab_Three;
 // import statements
 import java.util.*;
 
-public class PalindromeChecker
+public class Lab3_Driver
 {
     public static void main(String[] args)
     {
+
+        // Since the files at the end of lab pdf showed only one driver file, I have merged
+        // both the questions in one driver file
+
+        // ---------------------- QUESTION ONE ----------------------------
+
+        System.out.println("----------------------------------------------");
+        System.out.println();
+
         // creating an ArrayStack with a default capacity of 1000
         Stack<Character> stack = new ArrayStack<>();
 
@@ -68,6 +77,44 @@ public class PalindromeChecker
         String endMessage = isPalindrome ? "\tis a palindrome" : "\tis not a palindrome";
         System.out.println(endMessage);
 
+        // ---------------------- QUESTION TWO ----------------------------
+        System.out.println();
+        System.out.println("----------------------------------------------");
+        System.out.println();
+
+        // instantiating a LinkedJavaQueue
+        LinkedJavaQueue<String> queue = new LinkedJavaQueue<>();
+
+        // adding said elements to the queue
+        queue.enqueue("Alisha");
+        queue.enqueue("Anna");
+        queue.enqueue("Nick");
+        System.out.println("Currently waiting:" + queue);
+
+        queue.enqueue("Joy");
+        System.out.println("Currently waiting:" + queue);
+
+        queue.enqueue("Brendan");
+        queue.enqueue("Rebecca");
+        System.out.println("Currently waiting:" + queue);
+
+        queue.dequeue();
+        System.out.println("The next customer to be answered is " + queue.first());
+
+        queue.enqueue("Ryan");
+        System.out.println("Number of customers: " + queue.size());
+
+        System.out.println("An agent will now answer " + queue.dequeue());
+        System.out.println("An agent will now answer " + queue.dequeue());
+        System.out.println("An agent will now answer " + queue.dequeue());
+        System.out.println("Number of customers: " + queue.size());
+
+        System.out.println("An agent will now answer " + queue.dequeue());
+        System.out.println("An agent will now answer " + queue.dequeue());
+        System.out.println("Number of customers: " + queue.size());
+        System.out.println("Currently waiting:" + queue);
+
+
     } // end of main
 
-} // end of PalindromeChecker
+} // end of Lab3_Driver

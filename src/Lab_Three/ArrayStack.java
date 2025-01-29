@@ -1,3 +1,10 @@
+/*****************************************************************************************
+ * ACS-2947 | Lab Three
+ * @author Ekamjot Singh
+ * Student ID: 3167888
+ * GitHub Link : https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Three
+ ****************************************************************************************/
+
 package Lab_Three;
 
 public class ArrayStack<E> implements Stack<E>
@@ -95,7 +102,7 @@ public class ArrayStack<E> implements Stack<E>
                 sb.append(data[i]).append(",");
             else
                 sb.append(data[i]);
-        } // end of for-eachx=
+        } // end of for-each
         sb.append("]");
 
         return sb.toString();
