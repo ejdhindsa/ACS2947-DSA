@@ -1,4 +1,4 @@
-package Assignment_One;
+package AssignmentOne.QuestionOne;
 
 // import statements
 import java.util.Random;

@@ -1,4 +1,4 @@
-package Assignment_One;
+package AssignmentOne.QuestionOne;
 
 /**
  * ACS-2927 | Assignment One <br>
@@ -244,7 +244,6 @@ public class CircularDoublyLinkedList<E>
 
         // use of do-while loop since we want the code to run at least once as the first current
         // value is actually the head, then we terminate the while loop if we encounter it again
-        sb.append("[");
         do {
             sb.append(current.getElement());            // append to string builder
             current = current.getNext();                // move onto the next element
@@ -253,7 +252,6 @@ public class CircularDoublyLinkedList<E>
                 sb.append(", ");                        // keep appending ", "
 
         } while (current != tail.getNext());
-        sb.append("]");
 
         return sb.toString();                           // return the string to the user
     } // end of toString
