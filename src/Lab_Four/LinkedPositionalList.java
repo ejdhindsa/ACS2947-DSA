@@ -2,6 +2,9 @@ package Lab_Four;
 
 /**
  * From Data Structures and Algorithms in Java, Sixth Edition, Goodrich et al.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Four">Github</a>
  */
 
 public class LinkedPositionalList<E> implements PositionalList<E> {
