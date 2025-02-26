@@ -1,4 +1,4 @@
-package AssignmentTwo;
+package AssignmentTwo.QuestionOne;
 
 // import statements
 import java.util.Iterator;
@@ -10,6 +10,7 @@ import java.util.Iterator;
  *
  * @author Ekamjot Singh | 3167888
  * @version 1.0
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentTwo">Assignment Two GitHub</a>
  */
 public interface List<E> extends Iterable<E> {
 

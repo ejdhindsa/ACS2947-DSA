@@ -1,4 +1,4 @@
-package AssignmentTwo;
+package AssignmentTwo.QuestionOne;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -9,6 +9,7 @@ import java.util.NoSuchElementException;
  *
  * @author Ekamjot Singh | 3167888
  * @version 1.0
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentTwo">Assignment Two GitHub</a>
  */
 public class ArrayList<E> implements List<E>
 {
@@ -168,8 +169,6 @@ public class ArrayList<E> implements List<E>
 
     /**
      * Public method that adds an element to the end of the arraylist.
-     * The method first calls the checkIndex() method to see if the index that has been passed is a
-     * valid index or not, if it is, the element at that index is returned to the user.
      * If the capacity of the array is full, it calls the resize method and increases the capacity
      * of the array to be twice the current capacity
      *
@@ -180,7 +179,6 @@ public class ArrayList<E> implements List<E>
      */
     public void add(E element) throws IndexOutOfBoundsException
     {
-        checkIndex(size, size);                 // checks if index is valid
         if(size == data.length)
             resize(2 * data.length);    // if the arraylist is over capacity, resize the array
 
@@ -288,16 +286,18 @@ public class ArrayList<E> implements List<E>
         if(getClass() != o.getClass())
             return false;                   // return false if classes don't match
 
-        ArrayList other = (ArrayList) o;    // use non-parameterised type
+        ArrayList<E> other = (ArrayList<E>) o;    // use non-parameterised type
+
+        if(this.size() != other.size())
+            return false;                           // return false if the sizes don't match
 
         for (int i = 0; i < size(); i++)
         {
-            if(data[i] != other.data[i])
+            if(!data[i].equals(other.data[i]))
                 return false;               // return false if data does not match
         } // end of for
 
         return true;                        // otherwise return true
-
     } // end of equals()
 
     /**
