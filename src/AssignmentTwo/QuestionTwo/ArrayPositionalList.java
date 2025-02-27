@@ -9,7 +9,7 @@ package AssignmentTwo.QuestionTwo;
  * @version 1.0
  * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentTwo">Assignment Two GitHub</a>
  */
-public abstract class ArrayPositionalList<E> implements PositionalList<E> {
+public class ArrayPositionalList<E> implements PositionalList<E> {
 
     //-------------------- NESTED LOCATION CLASS ------------------------------
 
@@ -287,7 +287,7 @@ public abstract class ArrayPositionalList<E> implements PositionalList<E> {
         // getting the index before which new element is to be added
         int index = location.getIndex();
 
-        // shifting all the indices to the next indice
+        // shifting all the indices to the next indices
         for(int i = size - 1; i >= index; i--)
         {
             data[i + 1] = data[i];
@@ -295,7 +295,7 @@ public abstract class ArrayPositionalList<E> implements PositionalList<E> {
         } // end of for loop
 
         // setting the new element to before the index of the current element
-        Location<E> element = new Location<>(size, e);
+        Location<E> element = new Location<>(index, e);
         data[index] = element;
         size++;                             // increasing the size
 
@@ -376,12 +376,13 @@ public abstract class ArrayPositionalList<E> implements PositionalList<E> {
         int index = location.getIndex();            // getting the index of the location
         E removed = location.getElement();          // saving the element that is to be removed
 
-        for(int i = index + 1; i < size - 1; i++)
+        for(int i = index + 1; i < size; i++)
         {
             data[i - 1] = data[i];
-            data[i - 1].setIndex(index + 1);
+            data[i - 1].setIndex(i - 1);
         } // end of for
 
+        data[size -1 ] = null;                      // helps with garbage collection
         size--;                                     // decreasing size by one
         location.setIndex(-1);                      // setting index to -1 to make it invalid
         location.setElement(null);                  // helps with garbage collection
@@ -402,7 +403,7 @@ public abstract class ArrayPositionalList<E> implements PositionalList<E> {
         for (int i = 0; i < size; i++)
         {
             sb.append("[").append(data[i].getIndex()).append("]");
-            sb.append(" ").append(data[i].getElement());
+            sb.append(" ").append(data[i].getElement()).append(" ");
         } // end of for loop
 
         return sb.toString();
