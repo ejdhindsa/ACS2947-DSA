@@ -50,4 +50,31 @@ public abstract class AbstractTree<E> implements Tree<E>
         return size() == 0;
     } // end of isEmpty()
 
+    /**
+     * Returns the number of levels separating Position p from the root
+     * @param p element whose depth is to be found
+     * @return depth of the element
+     */
+    public int depth(Position<E> p)
+    {
+        if (isRoot(p))
+            return 0;
+        else
+            return 1 + depth(parent(p));
+    } // end depth()
+
+    /**
+     * Returns the height of the subtree rooted at position p
+     * @param p subtree of which the height is to be found
+     * @return height of the tree
+     */
+    public int height(Position<E> p)
+    {
+        int h = 0;
+        for (Position<E> c : children(p))
+            h = Math.max(h, 1 + height(c));
+
+        return h;
+    } // end of height()
+
 } // end of AbstractTree()

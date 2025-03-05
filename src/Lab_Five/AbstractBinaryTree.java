@@ -1,5 +1,8 @@
 package Lab_Five;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * ACS-2947 - Lab 5
  * An abstract base class providing some functionality of the BinaryTree interface
@@ -47,5 +50,23 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E>
         return count;
 
     } // end of numChildren()
+
+    /**
+     * Returns an iterable collection of the Positions representing p's children
+     * @param p A valid Position within the tree
+     * @return iterable of the children
+     */
+    public Iterable<Position<E>> children(Position<E> p)
+    {
+        List<Position <E>> snapshot = new ArrayList<>(2);
+
+        if (left(p) != null)
+            snapshot.add(left(p));
+        if (right(p) != null)
+            snapshot.add(right(p));
+
+        return snapshot;
+
+    } // end of children()
 
 } // end of AbstractBinaryTree()

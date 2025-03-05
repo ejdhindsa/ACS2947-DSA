@@ -6,6 +6,7 @@ package Lab_Five;
  * A 'Modified' non-iterable interface for a tree where nodes can have an arbitrary number of children.
  *
  * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Five">GitHub</a>
  */
 public interface Tree<E>
 {

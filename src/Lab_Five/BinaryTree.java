@@ -6,6 +6,7 @@ package Lab_Five;
  * An interface for a binary tree, in which each node has at most two children.
  *
  * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Five">GitHub</a>
  */
 public interface BinaryTree<E> extends Tree<E>
 {

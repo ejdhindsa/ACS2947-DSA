@@ -5,6 +5,7 @@ package Lab_Five;
  * From Data Structures and Algorithms in Java, Sixth Edition, Goodrich et al.
  *
  * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Five">GitHub</a>
  */
 public interface Position<E>
 {
