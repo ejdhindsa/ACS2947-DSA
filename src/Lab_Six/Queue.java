@@ -1,18 +1,14 @@
 package Lab_Six;
 
 import java.util.Iterator;
-/**
- * ACS-2947
- * Lab 5
- * Adapted from  Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser
- *
- */
 
 /**
+ * Ekamjot Singh | 3167888 <br>
+ * ACS-2947 Lab Six
  * Interface for a queue: a collection of elements that are inserted
  * and removed according to the first-in first-out principle. Although
  * similar in purpose, this interface differs from java.util.Queue.
- *
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Six">GitHub</a>
  */
 public interface Queue<E> extends Iterable<E>
 {
