@@ -2,6 +2,11 @@ package AssignmentThree.QuestionTwo;
 
 import java.util.Random;
 
+/**
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
+ */
 public enum FlyerStatus
 {
     // instantiating enum values

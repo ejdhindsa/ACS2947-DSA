@@ -1,5 +1,10 @@
 package AssignmentThree.QuestionOne;
 
+/**
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
+ */
 public class LinkedStack<E> implements Stack<E>
 {
     private SinglyLinkedList<E> list = new SinglyLinkedList<>();        // an empty list
@@ -25,5 +30,11 @@ public class LinkedStack<E> implements Stack<E>
     public E pop() {
         return list.removeFirst();
     } // end of pop
+
+    @Override
+    public String toString()
+    {
+        return list.toString();
+    } // end of toString()
 
 } // end of class

@@ -4,12 +4,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * ACS-2947 | Assignment Two <br>
- * Implementation of a generic ArrayList as required by the assignment
- *
+ * ACS-2947 - Assignment Three
  * @author Ekamjot Singh | 3167888
- * @version 1.0
- * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentTwo">Assignment Two GitHub</a>
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
 public class ArrayList<E> implements List<E>
 {

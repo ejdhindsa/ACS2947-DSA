@@ -2,13 +2,9 @@ package AssignmentThree.QuestionOne;
 
 /**
  * ACS-2947 - Assignment Three
- * Linked Binary Class that is based on previous interfaces and abstract classes
- * @param <E> generalised variable to be used in the class
- *
  * @author Ekamjot Singh | 3167888
- * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Five">GitHub</a>
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
-
 public class LinkedBinaryTree<E> extends AbstractBinaryTree<E>
                                  implements BinaryTree<E>
 {

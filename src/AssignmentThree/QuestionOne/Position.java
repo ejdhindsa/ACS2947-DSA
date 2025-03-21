@@ -1,11 +1,9 @@
 package AssignmentThree.QuestionOne;
 
 /**
- * ACS-2947 | Lab 5 <br>
- * From Data Structures and Algorithms in Java, Sixth Edition, Goodrich et al.
- *
+ * ACS-2947 - Assignment Three
  * @author Ekamjot Singh | 3167888
- * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Five">GitHub</a>
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
 public interface Position<E>
 {

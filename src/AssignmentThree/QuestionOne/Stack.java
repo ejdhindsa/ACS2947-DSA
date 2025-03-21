@@ -1,12 +1,9 @@
 package AssignmentThree.QuestionOne;
 
 /**
- * Copyright 2014, Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser
- *
- * A collection of objects that are inserted and removed according to the last-in
- * first-out principle. Although similar in purpose, this interface differs from
- * java.util.Stack.
- *
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
 public interface Stack<E>
 {

@@ -1,8 +1,12 @@
 package AssignmentThree.QuestionOne;
 
-// import statements
 import java.util.Scanner;
 
+/**
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
+ */
 public class PartA_Driver
 {
     public static void main(String[] args)
@@ -53,12 +57,45 @@ public class PartA_Driver
     public static int evaluateTree(LinkedBinaryTree<String> tree)
     {
         // variables
-        int total = 0;                                          // total of the binary tree
-        LinkedStack<String> stack = new LinkedStack<>();        // declaring a stack to hold all the values
+        LinkedStack<Integer> stack = new LinkedStack<>();        // declaring a stack to hold all the values
 
+        // for loop that pushes all elements in the stack
+        for (Position<String> p : tree.postorder())
+        {
+            String element = p.getElement();            // element in the current position
 
+            if(element.equals("+"))
+            {
+                int valueOne = stack.pop();
+                int valueTwo = stack.pop();
+                stack.push(valueTwo + valueOne);
+            } // end of if
+            else if (element.equals("-"))
+            {
+                int valueOne = stack.pop();
+                int valueTwo = stack.pop();
+                stack.push(valueTwo - valueOne);
+            } // end of else if
+            else if (element.equals("*"))
+            {
+                int valueOne = stack.pop();
+                int valueTwo = stack.pop();
+                stack.push(valueTwo * valueOne);
+            } // end of else if
+            else if (element.equals("/"))
+            {
+                int valueOne = stack.pop();
+                int valueTwo = stack.pop();
+                stack.push(valueTwo / valueOne);
+            } // end of else if
+            else
+            {
+                stack.push(Integer.parseInt(element));
+            } // end of else
 
-        return total;
+        } // end of for
+
+        return stack.top();
     } // end of evaluateTree
 
     /**

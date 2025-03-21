@@ -4,6 +4,11 @@ package AssignmentThree.QuestionTwo;
 import java.util.Date;
 import java.sql.Timestamp;
 
+/**
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
+ */
 public class Passenger implements Comparable<Passenger>
 {
     // instance variables
@@ -69,7 +74,7 @@ public class Passenger implements Comparable<Passenger>
      */
     public int compareTo(Passenger other)
     {
-        return Integer.valueOf(this.passportNumber.compareTo(other.passportNumber));
+        return this.passportNumber.compareTo(other.passportNumber);
     } // end of compareTo
 
 } // end of Passenger

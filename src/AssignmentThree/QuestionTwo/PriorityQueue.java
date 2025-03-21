@@ -5,9 +5,10 @@ package AssignmentThree.QuestionTwo;
  */
 
 /**
- * Interface for the priority queue ADT.
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
-
 public interface PriorityQueue<K,V> {
 
     /**

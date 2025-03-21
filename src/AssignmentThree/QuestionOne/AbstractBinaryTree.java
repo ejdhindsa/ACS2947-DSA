@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ACS-2947 - Lab 5
- * An abstract base class providing some functionality of the BinaryTree interface
- * @param <E> generalised variable to be used in the class
- *
+ * ACS-2947 - Assignment Three
  * @author Ekamjot Singh | 3167888
- * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/Lab_Five">GitHub</a>
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
 public abstract class AbstractBinaryTree<E> extends AbstractTree<E>
                                             implements BinaryTree<E>

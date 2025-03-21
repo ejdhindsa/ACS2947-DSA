@@ -3,9 +3,9 @@ package AssignmentThree.QuestionTwo;
 import java.util.Comparator;
 
 /**
- * An implementation of a priority queue using an array-based heap
- * @param <K> key of the element
- * @param <V> value of the element
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
  */
 public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V>
 {

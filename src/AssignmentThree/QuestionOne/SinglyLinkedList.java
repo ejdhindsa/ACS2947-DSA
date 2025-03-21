@@ -1,11 +1,10 @@
 package AssignmentThree.QuestionOne;
 
-/*********************************************************************************
- * Lab 2 | ACS-2907-002
- * @author Ekamjot Singh
- * Student Number 3167888
- ********************************************************************************/
-
+/**
+ * ACS-2947 - Assignment Three
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentThree">GitHub</a>
+ */
 public class SinglyLinkedList<E>
 {
     // ********************** NESTED NODE CLASS ***************************
