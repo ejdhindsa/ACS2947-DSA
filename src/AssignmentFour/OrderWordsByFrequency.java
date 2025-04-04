@@ -3,6 +3,16 @@ package AssignmentFour;
 // import statements
 import java.util.Comparator;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Comparator that compares two entries in terms of words.
+ * It sorts them with the ascending order of their frequencies, and if the words are the
+ * same, it goes by the natural ordering of character, i.e. by ASCII values
+ * @param <E> Generic Type value (would likely be an entry)
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class OrderWordsByFrequency<E> implements Comparator<Entry<String, Integer>>
 {
     /**

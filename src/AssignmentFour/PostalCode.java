@@ -1,5 +1,12 @@
 package AssignmentFour;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Creates a PostalCode Object as required by the assignment
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class PostalCode implements Comparable<PostalCode>
 {
     // instance variables
@@ -125,9 +132,9 @@ public class PostalCode implements Comparable<PostalCode>
     {
         StringBuilder builder = new StringBuilder();
 
-        builder.append("PostalCode [code=").append(code).append(", area=").append(area)
-                .append(", province=").append(province).append(", latitude=").append(latitude)
-                .append(", longitude=").append(longitude).append("]");
+        builder.append("PostalCode : ").append(code).append(", ").append(area);
+        builder.append(", ").append(province).append(", ").append(latitude);
+        builder.append(", ").append(longitude);
 
         return builder.toString();
 

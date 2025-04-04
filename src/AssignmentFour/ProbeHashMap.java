@@ -1,7 +1,18 @@
 package AssignmentFour;
 
+// import staments
 import java.util.ArrayList;
 
+
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Creates a ProbeHashMap as detailed in the class notes
+ * @param <K> Key of the Probe Hash Map
+ * @param <V> Value of the Probe Hash Map
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class ProbeHashMap<K,V> extends AbstractHashMap<K,V>
 {
     // instance variables

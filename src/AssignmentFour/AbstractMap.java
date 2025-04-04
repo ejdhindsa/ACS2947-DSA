@@ -11,7 +11,6 @@ import java.util.Iterator;
  * @param <V> Generic parameter that holds all the values in the map
  *
  * @author Ekamjot Singh | 3167888
- * @version 1.0
  * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
  */
 public abstract class AbstractMap<K, V> implements Map<K, V>
@@ -94,6 +93,22 @@ public abstract class AbstractMap<K, V> implements Map<K, V>
             this.value = value;
             return oldValue;
         } // end of setValue()
+
+        // -------------- UTILITY METHODS ------------------
+
+        @Override
+        public String toString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.append("{");
+            builder.append(key);
+            builder.append(", ");
+            builder.append(value);
+            builder.append("}");
+
+            return builder.toString();
+        } // end of toString
 
     } // ------------- END OF NESTED MapEntry CLASS ---------------
 

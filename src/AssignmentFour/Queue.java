@@ -1,13 +1,14 @@
 package AssignmentFour;
 
-/*
- *  From Data Structures and Algorithms in Java, Goodrich et al.
- */
-
 /**
+ * ACS-2927 | Assignment Four <br>
  * Interface for a queue: a collection of elements that are inserted
  * and removed according to the first-in first-out principle. Although
  * similar in purpose, this interface differs from java.util.Queue.
+ * From Data Structures and Algorithms in Java, Goodrich et al.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
  */
 public interface Queue<E>
 {

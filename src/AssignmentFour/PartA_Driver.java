@@ -6,6 +6,13 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Driver for Part A of the assignment.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class PartA_Driver
 {
     public static void main(String[] args) throws FileNotFoundException

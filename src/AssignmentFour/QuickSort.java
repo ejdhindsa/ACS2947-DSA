@@ -2,6 +2,17 @@ package AssignmentFour;
 
 import java.util.Comparator;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Public class that implements the sorting algorithm known as QuickSort that uses the principle of
+ * Divide and Conquer to sort values.
+ * It takes a comparator to sort the values based on hwo the comparator deals with the values.
+ * This is an in-place version of the sorting algorithm, i.e. it uses less resources than the basic
+ * quick sort method.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class QuickSort
 {
     /**

@@ -4,6 +4,15 @@ package AssignmentFour;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Public class that implements the sorting algorithm known as MergeSort that uses the principle of
+ * Divide and Conquer to sort values.
+ * It takes a comparator to sort the values based on hwo the comparator deals with the values.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class MergeSort
 {
     /**

@@ -3,9 +3,15 @@ package AssignmentFour;
 // import statements
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Driver for PartB of the Assignment.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public class PartB_Driver
 {
     public static void main(String[] args)
@@ -18,8 +24,8 @@ public class PartB_Driver
         populatePostalMap(postalMap);
 
         // printing statements as required
-        System.out.println("Total number of entries" + postalMap.size());
-        System.out.println("Number of collisions" + postalMap.getCollisions());
+        System.out.println("Total number of entries: " + postalMap.size());
+        System.out.println("Number of collisions: " + postalMap.getCollisions());
 
         // creating comparators for sorting the postalCode
         DefaultComparator<PostalCode> compareByCode= new DefaultComparator<>();
@@ -33,6 +39,7 @@ public class PartB_Driver
         for (PostalCode postalCode : postalMap.values())
         {
             codes[count] = postalCode;
+            count++;
         } // end of for
 
         // printing the postalCode based on the input by the user
@@ -45,22 +52,34 @@ public class PartB_Driver
             QuickSort.quickSortInPlace(codes, compareByCode, 0, codes.length - 1 );
 
             // printing postalCodes
-            System.out.println(Arrays.toString(codes));
+            for (PostalCode postalCode : codes)
+            {
+                System.out.println(postalCode);
+            } // end of enhanced for
         } // end of if
         else if (userInput.equals("L"))
         {
             QuickSort.quickSortInPlace(codes, compareByLongitude, 0, codes.length - 1);
 
             // printing postalCodes
-            System.out.println(Arrays.toString(codes));
+            for (PostalCode postalCode : codes)
+            {
+                System.out.println(postalCode);
+            } // end of enhanced for
         } // end of else if
-        else
-        {
+        else {
             System.out.println("Quitting program");
         } // end of else
 
     } // end of main
 
+    /**
+     * Public method that populates the PostalMap by reading in the file from Scanner and then splitting it
+     * into an array and adding it to said variables.
+     * Therefore, creating an instance of a PostalMap
+     * @param postalMap hashmap that is to be populated with the file
+     * @throws FileNotFoundException if the file is not found
+     */
     public static void populatePostalMap(LinkedChainHashMap<String, PostalCode> postalMap)
             throws FileNotFoundException
     {
@@ -77,7 +96,7 @@ public class PartB_Driver
             String[] parts = line.split(",");
 
             // setting values
-            String code = parts[0];
+            String code = parts[0].toUpperCase();
             String area = parts[1];
             String province = parts[2];
             double latitude = Double.parseDouble(parts[3]);

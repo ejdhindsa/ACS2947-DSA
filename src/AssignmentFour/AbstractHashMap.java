@@ -1,9 +1,19 @@
 package AssignmentFour;
 
 // import statement for libraries
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 
+/**
+ * ACS-2927 | Assignment Four <br>
+ * Following is the abstract implementation of the AbstractHashMap that extends AbstractMap, it provides
+ * some concrete methods that are inherited by its subclasses.
+ * @param <K> Key of the Hash Map
+ * @param <V>  Value of the Hash Map
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
+ */
 public abstract class AbstractHashMap<K, V> extends AbstractMap<K, V>
 {
     // instance variables
@@ -124,7 +134,7 @@ public abstract class AbstractHashMap<K, V> extends AbstractMap<K, V>
     private void resize(int newCapacity)
     {
         // creating a new arraylist with size n
-        ArrayList<Entry<K, V>> buffer = new ArrayList<Entry<K, V>>(n);
+        LinkedList<Entry<K, V>> buffer = new LinkedList<Entry<K, V>>();
 
         // populating buffer with existing values
         for (Entry<K, V> e : entrySet())

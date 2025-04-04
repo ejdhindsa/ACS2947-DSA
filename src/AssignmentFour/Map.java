@@ -1,12 +1,13 @@
 package AssignmentFour;
 
-/*
- *    From Data Structures and Algorithms in Java, Sixth Edition, Goodrich et al.
- */
-
 /**
+ * ACS-2927 | Assignment Four <br>
  * An interface for an associative map which binds a key uniquely to a value.
  * This interface is a simplified version of java.util.Map.
+ * From Data Structures and Algorithms in Java, Sixth Edition, Goodrich et al.
+ *
+ * @author Ekamjot Singh | 3167888
+ * @see <a href="https://github.com/ejdhindsa/ACS2947-DSA/tree/main/src/AssignmentFour">GitHub</a>
  */
 public interface Map<K,V>
 {
